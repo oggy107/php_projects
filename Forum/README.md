@@ -7,4 +7,3 @@
 * following is schema for the database. *make sure your database follows the schema*
 
 ![database schema](./other/fourm_db_schema.png)
-![adf](https://github.com/Oggy107/php_projects/blob/master/Forum/other/fourm_db_schema.png)

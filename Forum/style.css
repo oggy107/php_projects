@@ -1,0 +1,132 @@
+/* GENERAL */
+
+.main-container {
+    width: 70%;
+    margin: auto;
+    min-height: 100vh;
+}
+
+.title {
+    text-align: center;
+}
+
+.alert-container {
+    width: 100%;
+    height: 50px;
+}
+
+/* COMPONENTS */
+
+.footer {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* APP/INDEX.PHP */
+
+.category-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.btn-card {
+    position: absolute;
+    bottom: 10px;
+}
+
+.category-img {
+    width: 100%;
+    height: 143px;
+    animation: skeleton-animation 1s linear infinite alternate;
+}
+
+@keyframes skeleton-animation {
+    from {
+        background: hsl(200, 20%, 70%);
+    }
+
+    to {
+        background: hsl(200, 20%, 95%);
+    }
+}
+
+/* APP/THREAD_LIST.PHP AND APP/THREAD.PHP*/
+
+.thread-list-header {
+    background: rgba(0, 0, 0, 0.16);
+    padding: 20px;
+    border-radius: 0 0 15px 15px;
+}
+
+.thread-header {
+    position: relative;
+    display: flex;
+    column-gap: 30px;
+}
+
+.thread-card {
+    display: flex;
+    column-gap: 10px;
+    background:rgba(0, 0, 0, 0.16);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+}
+
+.thread-card-desc {
+    margin-top: 20px;
+}
+
+.reply-thread-card {
+    background: rgba(88, 194, 76, 0.253);
+}
+
+.btn-reply {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.btn-view-thread {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-container {
+        width: 95%;
+    }
+
+    .card {
+        margin: auto;
+    }
+
+    .thread-card {
+        padding-bottom: 50px;
+        padding-right: 50px;
+    }
+
+    .thread-header {
+        display: block;
+        padding-bottom: 50px;
+        padding-right: 50px;
+    }
+
+    .thread-card-img {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
